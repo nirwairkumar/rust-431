@@ -1,4 +1,5 @@
 # rust-431
-`To compile: rustc main.rs` 
-```Creating new folder(tutorial_code): 
-cargo new tutorial_code --bin```
+
+Creating new folder(tutorial_code): cargo new tutorial_code --bin
+To compile: rustc main.rs
+To run: ./main
