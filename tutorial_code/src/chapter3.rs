@@ -28,6 +28,12 @@ fn main(){
 
     println!("The value of 'add' function is: {}", add(4,6) );  //>>The value of 'add' function is: 10
 
+    // Calling the BMI function
+    let weight: f64 = 70.0;
+    let height: f64 = 1.82;
+    let bmi: f64 = calculate_bmi(weight,height);
+    println!("Your BMI is: {:.2}", bmi);    //Your BMI is: 21.13
+
 }
 
 fn hello_world(){
@@ -51,4 +57,12 @@ fn human_id(name: &str, age:u32, height:f32){
 // functions returning values
 fn add(a:i32, b:i32) -> i32{
     a+b
+}
+
+
+// Final Example: BMI
+// BMI = weight(kg)/height(m)^2
+
+fn calculate_bmi(weight_kg:f64, height_m:f64) -> f64{
+    weight_kg / (height_m*height_m)
 }
