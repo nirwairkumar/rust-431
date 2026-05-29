@@ -16,6 +16,7 @@
 // 1. Each value in Rust has a variable that's its owner.
 // 2. There can be only one owner at a time.
 // 3. When the owner goes out of scope, the value will be dropped.
+
 /*
 // ---- 1st rule's example-----
 fn main(){
@@ -39,9 +40,9 @@ fn main(){
     //println!("{}", s2);   //>>error _<^^ value borrowed here after move>_
     println!("{}", s3);    // >> flipkart
 }
-    */
+*/
 
-/*
+
 //-----3rd rule's example----------
 fn main(){
     let s4 = String::from("Amazon");
@@ -52,8 +53,9 @@ fn main(){
 fn calculate_length(s:&String)->usize{
     s.len()
 }
+/*
 // error-------------
 fn printLost(s:&String){
     println!("{}", &s4);   //cannot find value `s4` in this scope
-}
-    */
+}*/
+
